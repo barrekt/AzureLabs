@@ -59,3 +59,22 @@
 * Basic Web Hosting: HA EC2 Instances Serving Static Web Page behind ELB
 * Microservices: Elastic Beanstalk SSL Website for only API + S3 Static Website for all static content + DynamoDB Table + Route53 + CloudFront SSL
 * Serverless: Serverless Website using API Gateway + Lambda Functions + DynamoDB + Route53 + CloudFront SSL + S3 Static Website for all static content
+
+## <b>Automation</b>
+
+* These technologies are the most powerful when they're automated. You can make a Development environment in minutes and experiment and throw it away without a thought. This stuff isn't easy, but it's where the really skilled people excel.
+* Automate the deployment of the architectures above. Use whatever tool you want. The popular ones are AWS CloudFormation or Teraform. Store your code in AWS CodeCommit or on GitHub. Yes, you can automate the deployment of ALL of the above with native AWS tools.
+* I suggest when you get each app-related section of the done by hand you go back and automate the provisioning of the infrastructure. For example, automate the provisioning of your EC2 instance. Automate the creation of your S3 Bucket with Static Website Hosting enabled, etc. This is not easy, but it is very rewarding when you see it work.
+
+## <b>Continuous Delivery</b>
+
+* As you become more familiar with Automating deployments you should explore and implement a Continuous Delivery pipeline.
+* Develop a CI/CD pipeline to automatically update a dev deployment of your infrastructure when new code is published, and then build a workflow to update the production version if approved. Travis CI is a decent SaaS tool, Jenkins has a huge following too, if you want to stick with AWS-specific technologies you'll be looking at CodePipeline.
+
+## <b>Miscellaneous</b>
+
+>* IAM: You should really learn how to create complex IAM Policies. You would have had to do basic roles+policies for for the EC2 >Instance Role and Lambda Execution Role, but there are many advanced features.
+>* Networking: Create a new VPC from scratch with multiple subnets (you'll learn a LOT of networking concepts), once that is >working create another VPC and peer them together. Get a VM in each subnet to talk to eachother using only their private IP >addresses.
+>* KMS: Go back and redo the early EC2 instance goals but enable encryption on the disk volumes. Learn how to encrypt an AMI.
+
+
