@@ -1,3 +1,12 @@
+# <b> AzureLabs Project</b>
+
+This project is an idea I saw on a reddit post - [original thread here.](https://www.reddit.com/r/sysadmin/comments/8inzn5/so_you_want_to_learn_aws_aka_how_do_i_learn_to_be/)
+
+As an IT professional with an interest in cloud technologies I had been searching for project ideas that would give me some hands on experience throughout the whole lifecycle. This project was designed with AWS in mind. However, as I currently work in a Microsoft environment and manage our Azure WVD space I will tailor it to suit an Azure approach. 
+
+Each element of the project is broken into small, mangeable chunks to work through gradually. I will use this GitHub repo to upload all code, documentation and other resources.
+
+
 >## <b>Account Basics</b>
 
 >* Create an IAM user for your personal use. 
