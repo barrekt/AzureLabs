@@ -1,0 +1,3 @@
+Useful Powershell Command List
+
+Get-AzSubscription  // gives details on the connected Azure account
