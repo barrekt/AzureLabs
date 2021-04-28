@@ -13,7 +13,7 @@ Each element of the project is broken into small, mangeable chunks to work throu
 >* Set up MFA for your root user, turn off all root user API keys.
 >* Set up Billing Alerts for anything over a few dollars.
 >* Configure the AWS CLI for your user using API credentials.
->* Checkpoint: You can use the AWS CLI to interrogate information about your AWS account.
+>* Checkpoint: You can use the AWS CLI to interrogate information about your AWS account.~~
 
 >## <b>Wen Hosting Basics</b>
 
